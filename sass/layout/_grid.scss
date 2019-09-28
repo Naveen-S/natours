@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;
     @include clearfix;
 
@@ -12,7 +11,6 @@
     // class name starting with col-
     [class^="col-"] {
         float: left;
-        background-color: orangered;
 
         &:not(:last-child) {
             margin-right: $gutter-horizantal;
