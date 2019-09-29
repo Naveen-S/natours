@@ -183,11 +183,10 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 50rem;
+  height: 52rem;
   position: relative; }
   .card__side {
-    background-color: orangered;
-    height: 50rem;
+    height: 52rem;
     transition: transform 0.8s ease;
     position: absolute;
     backface-visibility: hidden;
@@ -195,6 +194,7 @@ body {
     left: 0;
     width: 100%;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: #fff; }
@@ -227,12 +227,24 @@ body {
     top: 12rem;
     right: 2rem;
     display: inline-block;
-    width: 20rem; }
-    .card__heading-span {
-      box-decoration-break: clone;
-      padding: 1rem 1.5rem; }
-      .card__heading-span--1 {
-        background: linear-gradient(to right bottom, #ffb900, #ff7730); }
+    width: 75%; }
+  .card__heading-span {
+    box-decoration-break: clone;
+    padding: 1rem 1.5rem; }
+    .card__heading-span--1 {
+      background: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
 
 .composition {
   position: relative; }

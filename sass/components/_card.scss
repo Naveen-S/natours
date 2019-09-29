@@ -1,12 +1,11 @@
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
-    height: 50rem;
+    height: 52rem;
     position: relative;
 
     &__side {
-        background-color: orangered;
-        height: 50rem;
+        height: 52rem;
         transition: transform 0.8s ease;
         position: absolute;
         backface-visibility: hidden;
@@ -14,6 +13,7 @@
         left: 0;
         width: 100%;
         border-radius: 3px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
@@ -62,12 +62,32 @@
         top: 12rem;
         right: 2rem;
         display: inline-block;
-        width: 20rem;
-        &-span {
-            box-decoration-break: clone;
-            padding: 1rem 1.5rem;
-            &--1 {
-                background: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        width: 75%;
+    }
+
+    &__heading-span {
+        box-decoration-break: clone;
+        padding: 1rem 1.5rem;
+        &--1 {
+            background: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-medium;
+                }
             }
         }
     }
