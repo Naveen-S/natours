@@ -49,7 +49,19 @@
 
         &::after{
             content: '';
+            display: inline-block;
             background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background: linear-gradient(to right, $color-primary, $color-primary-dark);
+        color: $color-white;
+        padding: 1.5rem 4rem;
+
+        &::after{
+            content: '';
+            background-color: $color-primary-dark;
         }
     }
     
