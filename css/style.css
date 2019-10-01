@@ -121,6 +121,9 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -141,7 +144,10 @@ body {
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
-  position: relative; }
+  position: relative;
+  outline: none;
+  border: 0;
+  font-size: inherit; }
 
 .btn:active, .btn:focus {
   transform: translateY(1rem);
@@ -533,8 +539,7 @@ body {
 .book {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
   .book__form {
     width: 50%;
     padding: 6rem; }
