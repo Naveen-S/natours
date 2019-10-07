@@ -344,6 +344,51 @@ body {
       font-size: 6rem;
       font-weight: 100;
       text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .card {
+      position: relative;
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        transition: transform 0.8s ease;
+        position: relative;
+        width: 100%; }
+        .card__side--front {
+          height: auto; }
+        .card__side--back {
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          height: auto;
+          margin-top: -12%;
+          transform: rotateY(0deg); }
+          .card__side--back-1 {
+            background: linear-gradient(to right bottom, #ffb900, #ff7730); }
+          .card__side--back-2 {
+            background: linear-gradient(to right bottom, #7ed56f, #28b485); }
+          .card__side--back-3 {
+            background: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .card:hover .card__side--front {
+        transform: rotateY(0deg); }
+      .card:hover .card__side--back {
+        transform: rotateY(0deg); }
+      .card__cta {
+        margin: 0 auto;
+        padding: 4rem;
+        text-align: center;
+        padding-top: 7rem; }
+      .card__price-box {
+        color: #fff;
+        margin-bottom: 4rem;
+        margin-top: 5rem; }
+        .card__price-box-only {
+          font-size: 1.6rem;
+          text-transform: uppercase; }
+        .card__price-box-value {
+          font-size: 6rem;
+          font-weight: 100;
+          text-transform: uppercase; } }
 
 .composition {
   position: relative; }
@@ -425,6 +470,9 @@ body {
   border: 3px solid transparent;
   border-radius: 2px;
   transition: all .3s; }
+  @media (max-width: 37.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     border-bottom: 3px solid #55c57a;
@@ -451,6 +499,9 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 37.25em) {
+    .form__radio-group {
+      width: 100%; } }
 
 .form__radio-input {
   display: none; }
@@ -559,6 +610,14 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
   transform: skewX(-12deg);
   border-radius: 3px; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.25em) {
+    .story {
+      transform: skewX(0deg); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -567,12 +626,21 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.25em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0deg); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s; }
+    @media (max-width: 37.25em) {
+      .story__image {
+        transform: translateX(0) scale(1.4); } }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.25em) {
+      .story__text {
+        transform: skewX(0deg); } }
   .story__caption {
     position: absolute;
     font-size: 1.7rem;
@@ -865,6 +933,18 @@ body {
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .book {
+      background: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
